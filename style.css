@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --BG: #1f2833;
+    --FONT: #c5c6c7;
+    --MAIN: #0b0c10;
+    --COLOR: #66fcf1;
+    --BTN: #45a29e;
+}
+
+body {
+    background: var(--BTN);
+    font-family: Roboto Mono;
+}
+
+.home-head {
+    text-align: center;
+}
+
+.home-paragraph {
+    margin: auto;
+    width: 400px;
+}
+
+.recipe-link:hover {
+    background: var(--BG);
+    color: var(--COLOR);
+    padding: 5px;
+}
+
+nav {
+    background-color: var(--BG);
+    border-radius: 10px;
+    margin: 3rem 1rem;
+    padding: 5px 10px;
+}
+
+ul.header-links {    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-content: center;
+    max-width: fit-content;
+}
+
+li.header-link {
+    margin: 0 1rem;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+
+
+a {
+    border-radius: 5px;
+    color: var(--COLOR);
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--BTN);
+    color: var(--MAIN);
+}
+
+
+
+.signup-form {
+    background: var(--BG);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    padding: 50px;
+    max-width: 350px;
+}
+
+h2 {
+    color: var(--MAIN);
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+}
+
+input {
+    background-color: var(--FONT);
+    border-radius: 5px;
+    color: var(--MAIN);
+    font-weight: 700;
+    
+    padding: 5px;
+    
+}
+
+input:hover {
+    background-color: var(--FONT);
+}
+
+button {
+    align-self: center;
+    background-color: var(--BTN);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+button:hover {
+    background-color: var(--COLOR);
+    box-shadow: 2px 2px 5px var(--MAIN);
+}
+
+.login-link:hover {
+    padding: 2px 5px;
+}
