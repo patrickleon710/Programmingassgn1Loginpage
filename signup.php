@@ -9,8 +9,8 @@ include_once 'header.php'
             <input type="text" name="name" placeholder="Full name...">
             <input type="text" name="email" placeholder="Email...">
             <input type="text" name="uid" placeholder="Username...">
-            <input type="password" name="pwd" placeholder="Password...">
-            <input type="password" name="pwdRepeat" placeholder="Repeat password...">
+            <input type="password" name="pwd" placeholder="Password..." minlength="5">
+            <input type="password" name="pwdRepeat" placeholder="Repeat password..." minlength="5">
 
             <p>Already have an account? <a href="login.php" class="login-link">Login</a></p>
 
@@ -19,15 +19,15 @@ include_once 'header.php'
         <?php
         if (isset($_GET["error"])) {
             if ($_GET["error"] == "emptyinput") {
-                echo "<p>Please fill in all fields</p>";
+                echo "<p>Please fill in all fields!!</p>";
             } else if ($_GET["error"] == "invaliduid") {
-                echo "<p>Please select another username</p>";
+                echo "<p>Please select another username!!</p>";
             } else if ($_GET["error"] == "invalidemail") {
-                echo "<p>Please select another email</p>";
+                echo "<p>Please select another email!!</p>";
             } else if ($_GET["error"] == "passwordsdontmatch") {
-                echo "<p>Passwords do not match</p>";
+                echo "<p>Passwords do not match!!</p>";
             } else if ($_GET["error"] == "usernamealreadyinuse") {
-                echo "<p>Username already in use</p>";
+                echo "<p>Username already in use!!</p>";
             } else if ($_GET["error"] == "stmtfailed") {
                 echo "<p>Something went wrong, try again!</p>";
             } else if ($_GET["error"] == "none") {

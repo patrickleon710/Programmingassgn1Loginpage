@@ -12,7 +12,7 @@
     --FONT: #c5c6c7;
     --MAIN: #0b0c10;
     --COLOR: #66fcf1;
-    --BTN: #45a29e;
+    --BTN: #45a29de8;
 }
 
 body {
@@ -44,7 +44,7 @@ nav {
 
 ul.header-links {    
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     justify-content:space-between;
     align-content: center;
     max-width: fit-content;
@@ -56,13 +56,17 @@ li.header-link {
     white-space: nowrap;
 }
 
-
+.header-link.sign-link {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
 
 a {
     border-radius: 5px;
     color: var(--COLOR);
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
 }
 

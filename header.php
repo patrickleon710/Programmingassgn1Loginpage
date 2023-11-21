@@ -41,10 +41,10 @@
                     }
                     else {
                         echo "
-                        <li class='header-link'><a href='signup.php'>Sign up</a></li>
+                        <li class='header-link sign-link'><a href='signup.php'>Sign up</a></li>
                         ";
                         echo "
-                        <li class='header-link'><a href='login.php'>Log in</a></li>
+                        <li class='header-link sign-link'><a href='login.php'>Log in</a></li>
                         ";
                     }
                 ?>
